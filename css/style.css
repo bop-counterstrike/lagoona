@@ -8,9 +8,49 @@ html {
     box-sizing: inherit;
 }
 
+@font-face {
+    font-family: "Muller";
+    src: local("Muller-Regular"),
+        url("../fonts/MullerRegular.woff2") format("woff2"),
+        url("../fonts/MullerRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: local("Muller-Bold"),
+        url("../fonts/MullerBold.woff2") format("woff2"),
+        url("../fonts/MullerBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: local("Muller-Light"),
+        url("../fonts/MullerLight.woff2") format("woff2"),
+        url("../fonts/MullerLight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: local("Muller-Medium"),
+        url("../fonts/MullerMedium.woff2") format("woff2"),
+        url("../fonts/MullerMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     background-color: #E5E5E5;
-    font-family: sans-serif;
+    font-family: "Muller";
 }
 
 .container {
@@ -72,6 +112,12 @@ body {
 
 .log-in-link {
     color: #CC9933;
+    display: block;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: left -5px;
+    padding-left: 29px;
 }
 
 .nav {
@@ -166,8 +212,12 @@ body {
 }
 
 .offers-block-link {
-    display: block;
     color: #CC9933;
+    background-image: url('../img/arrow2.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    padding-right: 11px;
 }
 
 .offers-block-big-h3 {
@@ -212,6 +262,12 @@ body {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
+    background-image: url('../img/arrow2.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    display: inline;
+    padding-right: 14px;
 }
 
 .services-card-1 {
@@ -242,4 +298,23 @@ body {
     line-height: 32px;
     font-size: 16px;
     font-weight: 400;
+}
+
+/* advantages */
+
+.advantages-list {
+    flex-wrap: wrap;
+    width: 1170px;
+    height: 574px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.advantages-item {
+    width: 276px;
+    height: 276px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
 }
